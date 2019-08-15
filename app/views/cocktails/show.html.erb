@@ -11,7 +11,9 @@
     <% end %>
   </ul>
 
-  <%= link_to 'Add Dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-success' %>
+  <h1>Add Dose</h1>
+  <%= render 'doses/new', cocktail: @cocktail, dose: @dose  %>
+
   <%= link_to 'Back to All Cocktails', cocktails_path, class: 'btn btn-primary'%>
 </div>
 
