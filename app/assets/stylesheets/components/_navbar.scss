@@ -1,12 +1,31 @@
-.navbar-lewagon {
+.navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.add-cocktail {
+  color: $yellow;
+  background-color: transparent;
+}
+
+.brand_logo {
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: white;
+}
+
+.brand_logo:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
