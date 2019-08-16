@@ -1,5 +1,7 @@
+<%= render 'shared/carousel' %>
+
 <div class="container index-box">
-  <h1>All Cocktails</h1>
+  <h3>Cocktail Menu</h3>
   <div class="cards">
       <% @cocktails.each do |cocktail| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path cocktail.photo %>')">

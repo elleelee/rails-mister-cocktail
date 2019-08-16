@@ -1,9 +1,18 @@
 .navbar {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
   padding: 10px;
+  z-index: 2;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar_right {
