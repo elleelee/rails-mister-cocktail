@@ -1,28 +1,28 @@
 <%= render 'shared/navbar_others' %>
 
-<div class="cocktail-photo" style="background-image: url('<%= cl_image_path @cocktail.photo %>')">
-
+<div class="cocktail-photo" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo %>')">
+  <h2><%= @cocktail.name %></h2>
 </div>
 
 <div class="container">
   <div class="content show-box">
     <div class="left-content">
-      <h2><%= @cocktail.name %></h2>
 
-      <h4>Ingredient List</h4>
+      <h3 style="margin-bottom: 24px"><strong>Ingredient List</strong></h3>
 
       <ul>
         <% @cocktail.doses.each do |dose| %>
           <li>
-            <%= dose.ingredient.name %> (<%= dose.description %>) <%= link_to '<i class="far fa-trash-alt text-danger"></i>'.html_safe, dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+            <strong><%= dose.ingredient.name.capitalize %></strong>  (<%= dose.description %>) <%= link_to '<i class="far fa-trash-alt text-danger"></i>'.html_safe, dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
           </li>
         <% end %>
       </ul>
-      <%= link_to 'Back to All Cocktails', root_path, class: 'btn btn-primary'%>
+      <div class="form-bottom"></div>
+      <%= link_to 'Back to All Cocktails', root_path, class: 'link-button'%>
     </div>
 
     <div class="right-content">
-      <h2>Add Dose</h2>
+      <h3 style="margin-bottom: 24px"><strong>Add Dose</strong></h3>
       <%= render 'doses/new', cocktail: @cocktail, dose: @dose  %>
     </div>
   </div>

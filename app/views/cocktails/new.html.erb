@@ -1,10 +1,13 @@
 <%= render 'shared/navbar_others' %>
 
 <div class="container new-box">
-  <h1>Add Cocktail</h1>
+  <div class="form-box">
+    <h3>Add Cocktail</h3>
 
-  <%= render 'form' %>
-
-  <%= link_to 'Back to All Cocktails', root_path, class: 'btn btn-primary top_margin' %>
+    <%= render 'form' %>
+    <div class="form-bottom">
+      <%= link_to 'Back to All Cocktails', root_path, class: 'link-button' %>
+    </div>
+  </div>
 </div>
 
