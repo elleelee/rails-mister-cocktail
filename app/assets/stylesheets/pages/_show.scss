@@ -22,7 +22,7 @@
 .left-content {
   flex-grow: 3;
   background-color: $light-gray;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
   margin-right: 24px;
   padding: 16px 20px;
@@ -31,7 +31,11 @@
 .right-content {
   flex-grow: 1;
   background-color: $light-gray;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
   padding: 16px;
+}
+
+.fa-trash-alt {
+  margin-left: 16px;
 }

@@ -1,3 +1,5 @@
+<%= render 'shared/navbar_others' %>
+
 <div class="cocktail-photo" style="background-image: url('<%= cl_image_path @cocktail.photo %>')">
 
 </div>
@@ -12,7 +14,7 @@
       <ul>
         <% @cocktail.doses.each do |dose| %>
           <li>
-            <%= dose.ingredient.name %> (<%= dose.description %>) <%= link_to '<i class="far fa-trash-alt text-primary"></i>'.html_safe, dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+            <%= dose.ingredient.name %> (<%= dose.description %>) <%= link_to '<i class="far fa-trash-alt text-danger"></i>'.html_safe, dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
           </li>
         <% end %>
       </ul>
