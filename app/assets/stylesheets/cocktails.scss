@@ -1,7 +1,16 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  height: 100%;
+}
+
 body {
-  background-color: $dark-gray;
-  color: $white;
+  background-color: $white;
+  color: $dark-gray;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
 }

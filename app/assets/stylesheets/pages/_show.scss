@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  align-items: top;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.content-left {
+  flex-grow: 3;
+}
+
+.content-right {
+  flex-grow: 1;
+}
